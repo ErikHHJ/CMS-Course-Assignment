@@ -14,7 +14,7 @@ body {
     padding: 10px;
 }
 .jacketimg{
-    width: 200px;
+    width: 300px;
     height: auto;
     border: 2px solid black;
 }
@@ -36,7 +36,8 @@ gap: 10px;
 display: flex;
 flex-direction: column;
 padding: 5px;
-line-height: 18px;
+line-height: 25px;
+font-size: 1.2rem;
 }
 .sizeselector{
     display: flex;
@@ -80,6 +81,8 @@ background: linear-gradient(
 .colour{
     display: flex;
     justify-content: space-between;
+    width: 15vw;
+    font-size: 15px;
 }
 .reviewgrid {
     display: grid;
@@ -148,6 +151,38 @@ background: linear-gradient(
     align-items: center;
     margin-bottom: 20px;
 }
+#loading {
+    width: 2rem;
+    height: 2rem;
+    border: 5px solid #4eb357;
+    border-top: 6px solid blue;
+    border-radius: 100%;
+    margin: auto;
+    display: none;
+    animation: spin 1s infinite linear;
+    position: absolute;
+    top: 100px;
+    left: 47.5%;
+    
+  }
+  #loading.display {
+    display: block;
+  }
+  .error{
+    margin: 0px auto;
+    position: absolute;
+    top: 110px;
+    left: 25%;
+
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+    }
 @media (min-width: 620px){
     .size {
         max-width: 850px;

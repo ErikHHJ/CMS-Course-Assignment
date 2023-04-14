@@ -5,6 +5,9 @@
 }
 body{
     background: #f0eaea;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .banner{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -83,6 +86,7 @@ body{
     background-color: black;
     height: 20vh;
     padding: 10px;
+    margin-top: auto;
  }
  .footer a {
     text-decoration: none;
