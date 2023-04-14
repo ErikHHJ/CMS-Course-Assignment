@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #f0eaea;
+}
+.banner{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: var(--signaturecolor);
+    letter-spacing: 5px;
+    }
+:root {
+    --signaturecolor: #43BDED;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--signaturecolor);
+    width: 100vw;
+    height: 49px;
+}
+.Logo{
+    height: 49px;
+    width: auto;
+}
+
+.menu{
+    height: 49px;
+    width: auto;
+    padding: 15px;
+}
+.profile{
+    display: flex;
+    justify-content: end;
+    height: 49px;
+    width: auto;
+    padding: 15px;
+}
+.hover{
+    color: black;
+    text-decoration: none;
+    margin-top: 40px;
+    display: none;
+    padding-left: 15px;
+}
+.hover:hover{
+    color: white;
+    text-decoration: underline;
+}
+.dropdownmenu , #menu-checkbox {
+    position: absolute;
+    top: 49px;
+    display: none;
+}
+#menu-checkbox:checked ~ .dropdownmenu {
+    display: block;
+}
+ .dropdownitem{
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: var(--signaturecolor);
+    padding: 20px;
+    letter-spacing: 2px;
+    border: 1px solid black;
+   
+    
+}
+.footergrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+ }
+ .footer {
+    background-color: black;
+    height: 20vh;
+    padding: 10px;
+ }
+ .footer a {
+    text-decoration: none;
+    color: white;
+ }
+ .footer ul{
+    list-style: none;
+ }
+ .sitenav {
+ color: white;
+ }
+ .info{
+ color: white;
+ }
+ .socials{
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+ }
+@media (min-width: 620px){
+    #icon{
+      display: none;
+    }
+    .dropdownitem {
+      display: none;
+    }
+   .nav a{
+      display: block;
+      font-size: 25px;
+   }
+   .nav {
+     display: flex;
+     justify-content: space-around;
+     height: 98px;
+   }
+   .Logo{
+    height: 98px;
+    margin-left: 20%;
+}
+.banner {
+    font-size: 30px;
+}
+}

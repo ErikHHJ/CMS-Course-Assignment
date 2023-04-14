@@ -1,0 +1,138 @@
+@import './Partials/layout.css';
+.container{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 80vh;
+}
+.bag{
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+}
+.desc{
+    max-width: 400px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 15px;
+    font-weight: normal;
+    line-height: 25px;
+}
+.circle1{
+    background-color: lightblue;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+.footergrid{
+    margin-bottom: 0;
+}
+
+.circle2{
+    position: absolute;
+    background: rgba(157, 203, 237, 0.2);
+    width: 152px;
+height: 152px;
+border-radius: 50%;
+-webkit-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+-moz-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+-o-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+
+}
+.circle3{
+    position: absolute;
+    background: rgba(63, 148, 153, 0.2);
+    width: 200px;
+height: 200px;
+border-radius: 50%;
+-webkit-animation: moveX 3.05s linear 2s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+-moz-animation: moveX 3.05s linear 2s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+-o-animation: moveX 3.05s linear 2s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+animation: moveX 3.05s linear 2s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+}
+@-webkit-keyframes moveX {
+    from { left: 0; } to { left: 160px; }
+  }
+  @-moz-keyframes moveX {
+    from { left: 0; } to { left: 160px; }
+  }
+  @-o-keyframes moveX {
+    from { left: 0; } to { left: 160px; }
+  }
+  @keyframes moveX {
+    from { left: 0; } to { left: 160px; }
+  }
+  @-webkit-keyframes moveY {
+    from { top: 0; } to { top: 280px; }
+  }
+  @-moz-keyframes moveY {
+    from { top: 0; } to { top: 280px; }
+  }
+  @-o-keyframes moveY {
+    from { top: 0; } to { top: 280px; }
+  }
+  @keyframes moveY {
+    from { top: 0; } to { top: 280px; }
+  }
+  .browsebtn{
+    font-size: 20px;
+    width: 65vw;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+  }
+  .browsebtn:hover{
+    color: black;
+    background-color: var(--signaturecolor);
+  }
+  .container a {
+    margin: 0 auto;
+  }
+@media (min-width: 620px){
+    .circle3{
+        height: 152px;
+        width: 152px;
+    }
+    .circle2{
+        height: 76px;
+        width: 76px;
+    }
+    @-webkit-keyframes moveX {
+        from { left: 0; } to { left: 80vw; }
+      }
+      @-moz-keyframes moveX {
+        from { left: 0; } to { left: 80vw; }
+      }
+      @-o-keyframes moveX {
+        from { left: 0; } to { left: 80vw; }
+      }
+      @keyframes moveX {
+        from { left: 0; } to { left: 80vw; }
+      }
+      @-webkit-keyframes moveY {
+        from { top: 0; } to { top: 280px; }
+      }
+      @-moz-keyframes moveY {
+        from { top: 0; } to { top: 280px; }
+      }
+      @-o-keyframes moveY {
+        from { top: 0; } to { top: 280px; }
+      }
+      @keyframes moveY {
+        from { top: 0; } to { top: 280px; }
+      }
+      .browsebtn{
+        max-width: 600px;
+        font-size: 30px;
+      }
+}

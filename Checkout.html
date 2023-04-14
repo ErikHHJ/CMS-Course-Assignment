@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RainyDays|checkout</title>
+    <link rel="stylesheet" href="./css/checkout.css">
+    <script src="https://kit.fontawesome.com/86fb0fb587.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Checkout page for buying a jacket from Rainydays.">
+    <script src="./js/checkout.js" type="module" defer></script>
+</head>
+<body class="gridcontainer">
+    <header>
+    <nav class="nav">
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox"><i id="icon" class="fa-solid fa-bars menu"></i></label>
+        <a class="hover" href="./Jackets.html">Jackets</a>
+        <a href="index.html"><img class="Logo" src="/images/RainyDaysLogo.webp" alt="Logo"></a>
+        <i id="icon" class="fa-solid fa-user profile"></i>
+        <a class="hover" href="/Contact.html">Contact</a>
+        <a class="hover" href="/About.html">About Us</a>
+        <div class="dropdownmenu"> 
+            <a class="dropdownitem" href="./Jackets.html">Jackets</a>
+            <a class="dropdownitem" href="./About.html">About</a>
+            <a class="dropdownitem" href="./Contact.html">Contact</a>
+        </div>
+    </nav>
+    </header>
+    <div class="banner"><h1>Order Summary</h1></div>
+    <main>
+        <div class="main">
+        <div class="summarydiv">
+        <div>
+            <img class="checkoutimg" src="./images/Jacket1 (1).webp" alt="Jacket 1">
+        </div>
+        <div>
+            <p class="nobold">Heavy TurboFlex rain jacket - Size: Medium</p>
+        </div>
+        <div class="size">
+            <h2 class="center">Size</h2>
+            <div class="sizeselector">
+                <div class="line"><h3>S</h3> </div>
+                <div><h3>M</h3> </div>
+                <div><h3>L</h3></div>
+                <div><h3>XL</h3></div>
+                <div><h3>XXL</h3></div>
+                <div><h3>3XL</h3></div>
+                <div><h3>4XL</h3></div>
+                <div><h3>5XL</h3></div>
+            </div>
+            </div>
+        </div>
+        <div class="quantity">
+            <div class="minusclick"><i class="fa-solid fa-minus minus"></i></div>
+            <div><h1 class="productquantity">1</h1></div>
+            <div class="plusclick"><i class="fa-solid fa-plus plus"></i></div>
+        </div>
+        <div>
+            <h2 class="topay">$70</h2>
+        </div>
+        <div class="fees">
+            <ul>
+                <li>Sub Total per product:</li>
+                <li>Tax per product:</li>
+                <li>Shipping:</li>
+            </ul>
+            <ul>
+                <li>$67.86</li>
+                <li>$2.14</li>
+                <li class="FREE">FREE</li>
+            </ul>
+        </div>
+        <div class="form">
+            <div class="billing"><h2>Billing Address</h2></div>
+            <div><p>Full name</p></div>
+            <div class="form-fields"><input class="input" type="text" placeholder="Tom Smith"></div>
+            <div><p>Email address</p></div>
+            <div class="form-fields"><input class="input" type="text" placeholder="Example123@gmail.com"></div>
+            <div><p>Street Address</p></div>
+            <div class="form-fields"><input class="input" type="text" placeholder="Example avenue 31"></div>
+            <div><p>Postal code + zip</p></div>
+            <div class="form-fields"><input class="input" type="text" placeholder="5114 Tertnes"></div>
+            <div><p>City</p></div>
+            <div class="form-fields"><input class="input" type="text" placeholder="Oslo"></div>
+            <div><p>Province</p></div>
+            <div class="form-fields"><input class="input" type="text" placeholder="Innland"></div>
+        </div>
+        <div>
+        <div class="middle"><h3>Please choose your preferred payment method</h3></div>
+            <div class="paymentoptions">
+                <i class="fa-brands fa-cc-visa paymenticons"></i>
+                <i class="fa-brands fa-cc-mastercard paymenticons"></i>
+                <label><input type="radio" name="payment"/>Pay $70 with credit/debit card
+            <input class="input" type="text" placeholder="Cardholder's name">
+            <input class="input" type="text" placeholder="Card number">
+            <input class="input" type="text" placeholder="Valid Date">
+            <input class="input" type="text" placeholder="CW/CVC">
+            </div>
+            <div class="paymentoptions2">
+                <i class="fa-brands fa-paypal paymenticons"></i>
+                <label><input type="radio" name="payment"/>Pay $70 with credit/debit card
+                <input class="input" type="text" placeholder="Paypal Email">
+                <input class="input" type="text" placeholder="Password">
+            </div>
+        </div>
+        </div>
+        <div><a href="./success.html" class="btncenter"><button class="bigCTA">SUBMIT</button></a></div>
+        </div>
+    
+        
+
+    </main>
+    <footer class="footergrid footer">
+        <div class="sitenav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <ul>
+                <li>Location: Bergen, Norway</li>
+                <li>Currency: USD</li>
+                <li>Languages: Norwegian, English</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><i class="fa-brands fa-facebook socials"></i></li>
+                <li><i class="fa-brands fa-twitter socials"></i></li>
+                <li><i class="fa-brands fa-instagram socials"></i></li>
+            </ul>
+        </div>
+    </footer>
+    </body>
+    </html>

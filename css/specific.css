@@ -1,0 +1,155 @@
+@import './Partials/Layout.css';
+body {
+    background: rgb(240, 234, 234);
+}
+.grid {
+    display: grid;
+    max-width: 600px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+}
+.grid h1{
+    font-size: 15px;
+    padding: 10px;
+}
+.jacketimg{
+    width: 200px;
+    height: auto;
+    border: 2px solid black;
+}
+.description{
+    font-size: 15px;
+    padding: 5px;
+}
+.bold {
+    font-weight: bold;
+}
+.venstre{
+display: flex;
+flex-direction: column;
+padding: 5px;
+font-size: 8px;
+gap: 10px;
+}
+.høyre {
+display: flex;
+flex-direction: column;
+padding: 5px;
+line-height: 18px;
+}
+.sizeselector{
+    display: flex;
+    margin: 0 auto;
+    padding: 5px;
+    justify-content: space-around;
+    font-weight: normal;
+    font-size: 10px;
+    max-width: 900px;
+}
+.sizeselector h3{
+    padding: 5px;
+}
+.sizeselector h3:hover {
+    background-color: black;
+    color: white;
+}
+.size {
+   margin-top: 70px;
+   border-bottom: 1px solid black;
+   width: 60vw;
+   margin: 0 auto;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.ellipse{
+width: 25px;
+height: 25px;
+background: linear-gradient(
+    to right,
+    #FF603E 0%,
+    #FF603E 50%,
+    #cacaca 50%,
+    #cacaca 100%);
+    border-radius: 50%;
+    transform: rotate(135deg);
+}
+
+.colour{
+    display: flex;
+    justify-content: space-between;
+}
+.reviewgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 20px;
+    margin-top: 100px;
+    background-color: rgb(230, 230, 230);
+}
+.reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px;
+    height: auto;
+}
+.ratings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px;
+    height: auto;
+
+}
+.ratings ul {
+    list-style: none;
+    padding: 10px;
+    line-height: 25px;
+
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4ch;
+}
+.percentage{
+    font-size: 25px;
+}
+.smalltext{
+    font-size: 10px;
+}
+.reviewbtn{
+    padding: 5px;
+    border-radius: 25px;
+    font-size: 15px;
+    margin-top: 5px;
+    background-color: black;
+    color: white;
+    margin-top: 2ch;
+}
+.bigCTA {
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 40px;
+    background-color: #3AD74A;
+    border: none;
+    max-width: 264px;
+}
+.buynow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+@media (min-width: 620px){
+    .size {
+        max-width: 850px;
+    }
+}
