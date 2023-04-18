@@ -45,7 +45,7 @@ const getData = async () => {
       if (obj.on_sale === false) {
         continue
       }
-      featured.innerHTML = `<div><h2>Featured Product:<h2><a href"jacketspecific.html?id=${obj.id}"><img class="ProductImg" src="${obj.images[0].thumbnail}" alt="${obj.images[0].alt}"></a>
+      featured.innerHTML = `<div><h2>Featured Product:</h2><a href="jacketspecific.html?id=${obj.id}"><img class="ProductImg" src="${obj.images[0].thumbnail}" alt="${obj.images[0].alt}"></a>
       <h2>${obj.name}</h2><br><button class="buynowbtn"><a href="./Checkout.html">Buy Now</a></button>
       <h3><span class="oldprice">${obj.prices.regular_price / 100 + "kr"}</span> ${obj.prices.sale_price / 100 + "kr"}</h3>;
       </div>`
