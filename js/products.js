@@ -21,9 +21,13 @@ const getData = async () => {
     }
     const results = await res.json();
     hideLoading();
+    console.log(results)
 
     for (let i = 0; i < results.length; i++) {
       const obj = results[i];
+      if(obj.on_sale === true) {
+        continue
+      }
       const card = document.createElement("div");
       card.classList.add("card");
       card.innerHTML += `
@@ -32,6 +36,19 @@ const getData = async () => {
           <button class="buynowbtn"><a href="./Checkout.html">Buy Now</a></button>
           <h3>${obj.prices.price / 100 + "kr"}</h3>`;
       container.appendChild(card);
+
+      
+    }
+    const featured = document.querySelector(".featured");
+    for (let i = 0; i < results.length; i++) {
+      const obj = results[i];
+      if (obj.on_sale === false) {
+        continue
+      }
+      featured.innerHTML = `<div><h2>Featured Product:<h2><a href"jacketspecific.html?id=${obj.id}"><img class="ProductImg" src="${obj.images[0].thumbnail}" alt="${obj.images[0].alt}"></a>
+      <h2>${obj.name}</h2><br><button class="buynowbtn"><a href="./Checkout.html">Buy Now</a></button>
+      <h3><span class="oldprice">${obj.prices.regular_price / 100 + "kr"}</span> ${obj.prices.sale_price / 100 + "kr"}</h3>;
+      </div>`
     }
   } catch (error) {
     console.log(error);
