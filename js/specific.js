@@ -13,6 +13,7 @@ const specificRender = async () => {
     try {
         const res = await fetch(url);
         const results = await res.json();
+        console.log(results)
         hideLoading()
         
         
