@@ -14,7 +14,7 @@ HTML, CSS and JavaScript.
 
 ## Getting Started
 ### Installing
-In order to take a look at this project, the netlify deployment link is: https://comforting-narwhal-ba7200.netlify.app/
+In order to take a look at this project, the netlify deployment link is: https://sprightly-dolphin-0dfc10.netlify.app
 To view the code, you must clone this repository
 
 1. Clone the repo:
